@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<style type="text/css">
+
+		#photo{
+			width:1000px;
+			height:700px;
+			background-size:cover;
+			background-repeat:no-repeat;
+			
+		}
+
+		body{
+			
+		}
+	</style>
+<audio id="song" src="tren.mp3"></audio>
+
+	<center><h1>Him</h1>
+		
+
+		<center>
+			
+			<div id='photo'></div>
+		</center>
+
+	</center>
+
+	 
+
+
+	<script type="text/javascript">
+			var clicks =0;
+		document.addEventListener("click",
+			function(){
+				clicks = clicks+1
+				console.log(clicks)
+
+			if (clicks%2 ==1){	
+				photo.style.backgroundImage="url(IMG_0098.png)";
+			song.pause()
+				}
+			if (clicks%2 ==0){
+				photo.style.backgroundImage="url(ghost.png)";
+				song.play()
+				box.innerText = ""
+				}
+
+			})
+	</script>
+
+</body>
+</html>

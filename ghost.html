@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	
+	#box{
+		width: 300px;
+		height: 150px;
+/*		background-color:white;
+*/		background-image:url(plane.png);
+		background-size:contain;
+		background-position:center;
+		position:absolute;
+		background-repeat: no-repeat;
+	}
+
+	#map{
+		height: 800px;
+		width: 100%;
+		background-image: url(map.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -2;
+		position: absolute;
+
+		}
+		body{
+			margin:0px;
+		}
+
+</style>
+
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="box"></div>
+ 
+ <script type="text/javascript">
+ 	
+ 	document.addEventListener("mousemove", function(event){
+ 		box.style.left= event.clientX -150 + "px";
+ 		box.style.top= event.clientY -75 + "px";	
+
+ 		})
+ 	</script>
+</body>
+</html>
