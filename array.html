@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#box{
+			width:400px;
+			height:500px;
+			border:1px solid black;
+			font-size:50px;
+			background-position:center;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<center>
+	<p>Tonight you should watch...</p>
+	<div id="box"></div>
+	</center>
+	<script type="text/javascript">
+		
+		var movies = ["fightclub", "se7en", "no country for old men", "clockwork orange", "the northman", "taxi driver", "interstellar", "once upon a time in hollywood", "gladiator", "bladerunner 2049", "bladerunner 2019", "the batman", "the joker"]
+		var images = ["fightclub.png", "rome.png",]
+
+		box.addEventListener("click", function(){
+		
+		
+		var randomNumber = Math.round(Math.random()*10);
+
+			box.innerText =movies[0]
+			 box.style.backgroundImage ="url("+images[0] +")";
+		
+	
+		})
+
+	</script>
+
+</body>
+</html>

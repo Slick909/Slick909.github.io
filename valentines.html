@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+
+  body{
+    margin:0px;
+  }
+	#mat{
+		background-image:url(mat.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 800px;
+    background-position: center;
+		width: 100%;
+
+	}
+
+
+	#carlos{
+  width:150px;
+  height:100px;
+  background-image:url(los.png);
+  background-position:center;
+  position: relative;
+  background-size:contain;
+  background-repeat:no-repeat;
+  animation-name: carlosmoving;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  top:0px;
+  left:0px;
+}
+
+@keyframes carlosmoving {
+  0%   {left:0px; top:0px;}
+  100%  {left:50%; top:300px;}
+
+	}
+
+	#luca{
+  width: 200px;
+  height:190px;
+  background-image:url(luca.jpg);
+  position: relative;
+  animation-name: lucamoving;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  left:1000px; 
+  top:1000px
+}
+
+@keyframes lucamoving {
+  0%   {left:1000px; top:1000px;}
+  100%  {left:50%; top:300px;
+        transform:rotateY();}
+
+	}
+
+</style>
+
+
+
+</head>
+<body>
+
+<div id="mat">
+
+<div id="carlos"></div>
+
+<div id="luca"></div>
+
+</div>
+<script type="text/javascript">
+	background.innertext.
+</script>
+
+</body>
+</html>

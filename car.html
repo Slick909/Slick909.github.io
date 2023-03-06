@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+
+		#bentley{
+			background-image:url(batcar.png);
+			width:800px;
+			height:800px;
+			background-color:;
+			right:;
+			position:absolute;
+			bottom: 10px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.gotham{
+			background-image:url(gotham.jpg);
+			width:2500px;
+			height:100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position:absolute;
+			top: 0px;
+
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<audio id="song" src="Destroy Lonely - if looks could kill [TubeRipper.com] (1).mp3" autoplay></audio>
+
+<div class="gotham">
+	<div id="bentley"></div> 
+	<div id="box stack-top" style="background: blue;"></div>
+</div>
+
+	<script type="text/javascript">
+		bentley.style.right = "10px";
+
+		 var x = parseInt(bentley.style.right);
+
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+			x = x+10;
+
+			bentley.style.right = x +"px";
+
+		})
+
+			
+
+
+	</script>
+
+</body>
+</html>
