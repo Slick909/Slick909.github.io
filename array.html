@@ -25,15 +25,16 @@
 	<script type="text/javascript">
 		
 		var movies = ["fightclub", "se7en", "no country for old men", "clockwork orange", "the northman", "taxi driver", "interstellar", "once upon a time in hollywood", "gladiator", "bladerunner 2049", "bladerunner 2019", "the batman", "the joker"]
-		var images = ["fightclub.png", "rome.png",]
+		var images = ["fightclub.jpeg", ]
 
-		box.addEventListener("click", function(){
+	box.addEventListener("click", function(){
 		
 		
-		var randomNumber = Math.round(Math.random()*10);
+		var number = Math.round(Math.random()*13)
+		console.log(number)
 
-			box.innerText =movies[0]
-			 box.style.backgroundImage ="url("+images[0] +")";
+			box.innerText = movies[number];
+		 box.style.backgroundImage ="url("+images[number] +")";
 		
 	
 		})
