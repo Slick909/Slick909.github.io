@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<style>
+  	body {
+    background-image: url(studio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    height: 820px;
+
+ 
+  	}
+	</style>
+
+<style>
+	#bag{
+		background-image:url(punchingbag.jpg);
+		height: 600px;
+		width: 600px;
+		position: absolute;
+		bottom: 50px;
+		left: 300px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		}
+
+
+</style>
+
+<style>
+	#kick{
+		background-image:url(kick.jpg);
+		height: 500px;
+		width: 500px;
+		position: absolute;
+		bottom: 50px;
+		right: 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		}
+
+
+</style>
+
+	<div id="bag"></div>
+
+	<div id="kick"></div>
+
+	<script type="text/javascript">
+   kick.style.right = "200px";
+
+		 var x = parseInt(kick.style.right);
+var step = 10; // Adjust this value to control the movement speed
+
+document.addEventListener("keydown", function(event) {
+  console.log(x);
+
+  if (event.key === "ArrowLeft") {
+    x += step; // Move image to the left
+  } else if (event.key === "ArrowRight") {
+    x -= step; // Move image to the right
+  }
+
+  kick.style.right = x + "px";
+});
+
+var clicks=0;
+document.addEventListener("click",
+function(){
+clicks = clicks+1
+console.log(clicks)
+
+if (clicks%2 == 1) {document.body.style.
+backgroundImage="url(cousins.png)";
+song.play()
+
+}
+
+if (clicks%2 == 0) {document.body.style.
+backgroundImage="url(cousinspt2.png)";
+song.pause()
+}
+})
+	</script>
+
+<audio id="song"src="flynow.mp3"></audio>
+
+</body>
+</html>
